@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 
 /**
  * main - Gives a random rumber and sais if is positive, negative or zero
@@ -14,15 +14,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d Is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n < 0)
 	{
-		printf("%d Is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	else
 	{
-		printf("%d Is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
