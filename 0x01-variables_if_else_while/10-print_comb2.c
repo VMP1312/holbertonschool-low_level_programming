@@ -14,13 +14,13 @@ int main(void)
 		for (sec = 0; sec <= 9; sec++)
 		{
 			putchar(fir  + '0');
-                        putchar(sec + '0');
-                        if (sum < 99)
-                        {
-                                putchar(',');
-                                putchar(' ');
-                        }
-                        sum++;
+			putchar(sec + '0');
+			if (sum < 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			sum++;
 		}
 	}
 	putchar('\n');
