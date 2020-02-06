@@ -10,9 +10,11 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; ++c)
 	{
-		if (c != 'e' && c != 'q'){
+		if (c != 'q' && c != 'e')
+		{
 			putchar(c);
 		}
-		putchar('\n');
-		return (0);
 	}
+	putchar('\n');
+	return (0);
+}
