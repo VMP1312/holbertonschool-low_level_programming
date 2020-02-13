@@ -2,7 +2,7 @@
 /**
  * _isupper - returns 1 if upercase alphabet and 0 if not
  * @c: character to print.
- * Return: 1 for uppercase, 1 for lowercase
+ * Return: 1 for uppercase, 0 for lowercase
  */
 int _isupper(int c)
 {
