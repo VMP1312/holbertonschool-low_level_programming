@@ -4,23 +4,27 @@
  * print_diagonal - print a diagonal line
  * @n: number of characters
  */
-
 void print_diagonal(int n)
 {
+	int space;
 	int line;
-	int i;
 
 	if (n > 0)
 	{
 		for (line = 1; line <= n; line++)
 		{
-			for (i = 1; i < line; i++)
+			for (space = 1; space < line; space++)
 			{
 				_putchar(' ');
 			}
-			_putchar('\\');
+			_putchar(92);
 			_putchar('\n');
 		}
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
+
 }
+
