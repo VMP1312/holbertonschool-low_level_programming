@@ -2,11 +2,11 @@
 #define DOG
 /**
  *struct dog -Structure of dog
- *@name: name 
+ *@name: name
  *@age: age
  *@owner: name of the owner
  */
-struct dog 
+struct dog
 {
 	char *name;
 	char *owner;
