@@ -1,3 +1,3 @@
 #ifndef PI
-#define SIZE 3.14159265359
-#endif 
+#define PI 3.14159265359
+#endif
