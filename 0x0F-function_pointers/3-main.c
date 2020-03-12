@@ -1,8 +1,14 @@
 #include "3-calc.h"
 #include <stdlib.h>
 #include <stdio.h>
+/**
+ * main - Execute the calc
+ * @argc: argc
+ * @argv: argv
+ * Return: 0
+ */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int n1, n2, val;
 	int (*func)(int, int);
@@ -18,7 +24,7 @@ int main (int argc, char *argv[])
 	if (func == NULL)
 	{
 		printf("Error\n");
-		exit(99);	
+		exit(99);
 	}
 	val = func(n1, n2);
 	printf("%d\n", val);
