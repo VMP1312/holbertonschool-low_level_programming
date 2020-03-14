@@ -1,9 +1,8 @@
 #include "variadic_functions.h"
 
 /**
- * print_all -
- *
- * Return: 
+ * print_all - print all
+ *@format: format
  */
 void print_all(const char * const format, ...)
 {
@@ -38,7 +37,7 @@ void print_all(const char * const format, ...)
 				j = 0;
 				break;
 			}
-			if (format[i+1] && j)
+			if (format[i + 1] && j)
 				printf(", ");
 			i++;
 		}
