@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	if (f2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	for (; rd != MAX_BUF ;)
+	for (; rd == MAX_BUF ;)
 	{
 		rd = read(f1, buf, MAX_BUF);
 		wr = write(f2, buf, rd);
@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	if (wr == -1)
+	if (wr <= -1)
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	if (close(f1) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f1), exit(100);
