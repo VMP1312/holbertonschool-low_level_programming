@@ -25,11 +25,10 @@ int main(int argc, char *argv[])
 	if (f2 == -1)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 
-	for (; rd == MAX_BUF ;)
-	{
+	do {
 		rd = read(f1, buf, MAX_BUF);
 		wr = write(f2, buf, rd);
-	}
+	} while (rd == MAX_BUF);
 
 	if (rd == -1)
 	{
