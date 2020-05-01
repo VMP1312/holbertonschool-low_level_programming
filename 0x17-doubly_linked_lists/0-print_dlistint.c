@@ -3,7 +3,7 @@
 /**
  * print_dlistint - Prints all the elements of a list.
  * @h: Head.
- * Return: The times it prints.
+ * Return: Count.
  */
 size_t print_dlistint(const dlistint_t *h)
 {
