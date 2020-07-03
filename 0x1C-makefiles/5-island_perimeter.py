@@ -9,11 +9,11 @@ def island_perimeter(grid):
         for y in range(len(grid)):
             if grid[x][y] == 1:
                 perim += 4
-                if grid[x + 1][y] == 1:
+                if x > 0 and grid[x + 1][y] == 1:
                     perim -= 1
                 if x > 0 and grid[x - 1][y] == 1:
                     perim -= 1
-                if grid[x][y + 1] == 1:
+                if x > 0 and grid[x][y + 1] == 1:
                     perim -= 1
                 if y > 0 and grid[x][y - 1] == 1:
                     perim -= 1
